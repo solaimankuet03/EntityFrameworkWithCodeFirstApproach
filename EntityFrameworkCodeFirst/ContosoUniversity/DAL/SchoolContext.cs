@@ -35,6 +35,9 @@ namespace ContosoUniversity.DAL
 
             modelBuilder.Entity<Instructor>()
                 .HasOptional(p => p.OfficeAssignment).WithRequired(p => p.Instructor);
+
+            modelBuilder.Entity<Department>().MapToStoredProcedures(); //using stored procedure
+            modelBuilder.Entity<Department>().Property(p => p.RowVersion).IsConcurrencyToken(); //concurrency handle
         }
     }
 }
