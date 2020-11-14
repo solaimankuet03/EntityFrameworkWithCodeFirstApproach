@@ -16,6 +16,7 @@ namespace ContosoUniversity.DAL
             this.Configuration.LazyLoadingEnabled = false;
         }
 
+        public DbSet<Person> People { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
