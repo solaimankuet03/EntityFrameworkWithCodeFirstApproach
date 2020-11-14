@@ -192,12 +192,17 @@
     <Compile Include="Migrations\202011141627011_RowVersion.Designer.cs">
       <DependentUpon>202011141627011_RowVersion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011141641277_Inheritance.cs" />
+    <Compile Include="Migrations\202011141641277_Inheritance.Designer.cs">
+      <DependentUpon>202011141641277_Inheritance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AssignedCourseData.cs" />
@@ -299,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011141627011_RowVersion.resx">
       <DependentUpon>202011141627011_RowVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011141641277_Inheritance.resx">
+      <DependentUpon>202011141641277_Inheritance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
